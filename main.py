@@ -51,7 +51,7 @@ Talisman(app, content_security_policy=None)
 @app.route('/')
 def main():
 	#index.html
-	date = datetime.today().strftime('%Y-%m-%d')
+	date = datetime.today().strftime('%Y-%m-%d-%H-%M-%S')
 	return codecs.open('web/index.html', 'r', 'utf-8').read().replace("REPLACE", date)
 
 #Favicon

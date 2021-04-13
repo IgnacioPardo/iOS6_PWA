@@ -1,4 +1,4 @@
-function hasNotch() {
+function async hasNotch() {
 	if (CSS.supports('padding-bottom: env(safe-area-inset-bottom)')) {
 		let div = document.createElement('div');
 		div.style.paddingBottom = 'env(safe-area-inset-bottom)';
@@ -12,12 +12,11 @@ function hasNotch() {
 	return false;
 }
 
-function resize_statusbar() {
-	var statusbar = document.getElementsByClassName("statusbar")[0];
-	if (hasNotch()){
-		statusbar.style.height = "70px";
+window.onload = function() {
+	if (await hasNotch()){
+		document.body.style.height = "120%";
 	}
-}
+};
 
 function app_touch(app){
 	switch (app.id){
