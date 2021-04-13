@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+			<!-- Main Tags -->
+  		<title>iOS 6</title>
+  		<meta name="title" content="iOS 6">
+			<meta name="Description" content="iOS 6">
+			<meta name="theme-color" content="#3A6581"/>
+
+			<!-- Twitter Tags -->
+			<meta name="twitter:card" content="iOS 6" />
+			<meta property="og:url" content="ios6.ignaciopardo.repl.co" />
+			<meta property="og:title" content="iOS 6" />
+			<meta property="og:description" content="iOS 6" />
+			<meta property="og:image" content="thumbnail.jpg" />
+
+			<!-- Apple Tags -->
+			<meta name="apple-mobile-web-app-capable" content="yes">
+			<link rel="apple-touch-icon" href="/static/icon-152.png">
+			<!-- <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">-->
+	
+			<!-- for Chrome on Android, multi-resolution icon of 196x196 -->
+			<meta name="mobile-web-app-capable" content="yes">
+			<link rel="shortcut icon" sizes="196x196" href="static/icon-196.png">
+			<meta name="apple-mobile-web-app-title" content="iOS 6">
+			<meta name="application-name" content="iOS 6">
+
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover,  shrink-to-fit=no, user-scalable=no" />
+			<meta name="HandheldFriendly" content="true"> 
+			<link rel="manifest" href="manifest.json">
+			<meta http-equiv="Cache-control" content="no-cache">
+			<meta http-equiv="Expires" content="-1">
+			<meta charset="utf-8">
+	    <link href="static/style.css?REPLACE" rel="stylesheet" type="text/css"/>
+			<link href="static/fonts.css" rel="stylesheet" type="text/css" />
+
+	</head>
+	<body unselectable="on" onselectstart="return false;" >
+		<div class="statusbar" onload="resize_statusbar()">
+		</div>
+
+		<div class="row">
+			<img id="FaceTime" onclick="app_touch(this)" class="app_icon" src="static/images/icons/FaceTime.jpg">
+			<img id="GameCenter" onclick="app_touch(this)" class="app_icon" src="static/images/icons/GameCenter.jpg">
+			<img id="photos" onclick="app_touch(this)" class="app_icon" src="static/images/icons/photos.jpg">
+			<img id="camera" onclick="app_touch(this)" class="app_icon" src="static/images/icons/camera.jpg">
+			<center>
+				<table class="label_row">
+					<center>
+						<tr class="labels">
+							<td class="label"><center>FaceTime</center></td>
+							<td class="label"><center>GameCenter</center></td>
+							<td class="label"><center>Photos</center></td>
+							<td class="label"><center>Camera</center></td>
+						</tr>
+					</center>
+				</table>
+			</center>
+		</div>
+
+		<div class="row">
+			<img id="youtube" onclick="app_touch(this)" class="app_icon" src="static/images/icons/youtube.jpg">
+			<img id="maps" onclick="app_touch(this)" class="app_icon" src="static/images/icons/maps.jpg">
+			<img id="Weather" onclick="app_touch(this)" class="app_icon" src="static/images/icons/Weather.jpg">
+			<img id="Passbook" onclick="app_touch(this)" class="app_icon" src="static/images/icons/Passbook.jpg">
+			<center>
+				<table class="label_row">
+					<center>
+						<tr class="labels">
+							<td class="label"><center>YouTube</center></td>
+							<td class="label"><center>Maps</center></td>
+							<td class="label"><center>Weather</center></td>
+							<td class="label"><center>Passbook</center></td>
+						</tr>
+					</center>
+				</table>
+			</center>
+		</div>
+
+		<div class="row">
+			<img id="notes" onclick="app_touch(this)" class="app_icon" src="static/images/icons/notes.jpg">
+			<img id="Reminders" onclick="app_touch(this)" class="app_icon" src="static/images/icons/Reminders.jpg">
+			<img id="clock" onclick="app_touch(this)" class="app_icon" src="static/images/icons/clock.jpg">
+			<img id="stocks" onclick="app_touch(this)" class="app_icon" src="static/images/icons/stocks.jpg">
+			<center>
+				<table class="label_row">
+					<center>
+						<tr class="labels">
+							<td class="label"><center>Notes</center></td>
+							<td class="label"><center>Reminders</center></td>
+							<td class="label"><center>Clock</center></td>
+							<td class="label"><center>Stock</center></td>
+						</tr>
+					</center>
+				</table>
+			</center>
+		</div>
+		
+		<div class="row">
+			<img id="Newsstand" onclick="app_touch(this)" class="app_icon" src="static/images/icons/Newsstand.jpg">
+			<img id="iTunes" onclick="app_touch(this)" class="app_icon" src="static/images/icons/iTunes.jpg">
+			<img id="appstore" onclick="app_touch(this)" class="app_icon" src="static/images/icons/app-store.jpg">
+			<img id="Cydia" onclick="app_touch(this)" class="app_icon" src="static/images/icons/Cydia.jpg">
+			<center>
+				<table class="label_row">
+					<center>
+						<tr class="labels">
+							<td class="label"><center>Newsstand</center></td>
+							<td class="label"><center>iTunes</center></td>
+							<td class="label"><center>App Store</center></td>
+							<td class="label"><center>Cydia</center></td>
+						</tr>
+					</center>
+				</table>
+			</center>
+		</div>
+
+		<div class="row">
+			<img id="settings" onclick="app_touch(this)" class="app_icon" src="static/images/icons/settings.jpg">
+			<img id="facebook" onclick="app_touch(this)" class="app_icon" src="static/images/icons/facebook.jpg">
+			<img id="twitter" onclick="app_touch(this)" class="app_icon" src="static/images/icons/twitter.jpg">
+			<img id="music" onclick="app_touch(this)" class="app_icon" src="static/images/icons/music.jpg">
+			<center>
+				<table class="label_row">
+					<center>
+						<tr class="labels">
+							<td class="label"><center>Settings</center></td>
+							<td class="label"><center>Facebook</center></td>
+							<td class="label"><center>Twitter</center></td>
+							<td class="label"><center>Music</center></td>
+						</tr>
+					</center>
+				</table>
+			</center>
+		</div>
+
+		<div class="row dock">
+			<center><img class="page_dots" src="static/images/page_dots.svg"></center>
+			<img id="messages" onclick="app_touch(this)" class="app_icon dock" src="static/images/icons/messages.jpg">
+			<img id="mail" onclick="app_touch(this)" class="app_icon dock" src="static/images/icons/mail.jpg">
+			<img id="safari" onclick="app_touch(this)" class="app_icon dock" src="static/images/icons/safari.jpg">
+			<img id="phone" onclick="app_touch(this)" class="app_icon dock" src="static/images/icons/phone.jpg">
+			<center>
+				<table class="label_row">
+					<center>
+						<tr class="labels">
+							<td class="label"><center>Messages</center></td>
+							<td class="label"><center>Mail</center></td>
+							<td class="label"><center>Safari</center></td>
+							<td class="label"><center>Phone</center></td>
+						</tr>
+					</center>
+				</table>
+			</center>
+		</div>
+		<script src='static/script.js?REPLACE'></script>
+	</body>
+</html>
